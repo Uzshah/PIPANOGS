@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pipanogs"
+version = "0.1.0"
+description = "Pi-GS: Panorama-Aware 3D Gaussian Splatting from Sparse Omnidirectional Images"
+requires-python = ">=3.10,<3.11"
+readme = "README.md"
+
+[tool.setuptools.packages.find]
+include = ["native_gs*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

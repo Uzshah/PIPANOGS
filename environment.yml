@@ -1,0 +1,10 @@
+name: pipanogs
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - setuptools
+  - wheel
+# After activation: bash tools/setup.sh
+# A system CUDA 12.6 toolkit (nvcc) and compatible NVIDIA driver are required.

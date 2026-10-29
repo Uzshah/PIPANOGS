@@ -1,0 +1,12 @@
+# Install torch/torchvision first using tools/setup.sh.
+numpy==1.26.4
+Pillow==11.2.1
+opencv-python-headless==4.11.0.86
+plyfile==1.1.3
+gsplat==1.5.3
+torchmetrics==1.9.0
+tqdm==4.67.1
+munch==4.0.0
+PyYAML==6.0.3
+ninja==1.11.1.3
+pytest==9.1.1
