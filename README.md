@@ -6,14 +6,7 @@ Uzair Shah, Giovanni Pintore, Hadeel Abed, Wala Elsharif, Muhammad Tukur, Mahmoo
 
 Π-GS treats overlapping perspective charts from one panorama as parameterizations of one physical observation. It aggregates Gaussian reliability and densification evidence at panorama level, reuses shared-center appearance evaluation in packed camera-batched rendering, and calibrates the resulting standard 3DGS scene for direct equirectangular rendering.
 
-```mermaid
-flowchart LR
-    A[Source RGB panoramas] --> B[Fixed poses and predicted depth / confidence]
-    B --> C[Chart cover and reliable Gaussian initialization]
-    C --> D[Packed panorama-level optimization]
-    D --> E[Fixed-position and fixed-topology spherical calibration]
-    E --> F[Standard 3DGS PLY and novel ERP views]
-```
+![Π-GS pipeline](pi_panogs_pipeline_4to1.jpg)
 
 **Release status:** this release uses the original panorama-aggregated **screen-space densification statistic**. It does not implement an angular projection-Jacobian conversion. The reliability EMA write-back correction is retained. A room-0 GPU run completed, and CPU regressions cover preparation, aggregation, state updates, and optimizer budgets. The complete twelve-scene manuscript table has not been independently reproduced. See [paper/code correspondence](docs/PAPER_CODE_CORRESPONDENCE.md).
 
